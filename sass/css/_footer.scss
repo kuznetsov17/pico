@@ -1,0 +1,15 @@
+#footer-wrapper {
+    border-top: 1px solid var(--main-color);
+}
+.footer-icons {
+    float: right;
+    padding-top: .3em;
+}
+
+.footer-text {
+    float: left;
+    p {
+        padding-top: .3em;
+        margin: 0;
+    }
+}

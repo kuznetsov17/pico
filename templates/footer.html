@@ -1,0 +1,18 @@
+{% block footer %}
+{% if page.extra.show_copyright or section.extra.show_copyright or term is defined %}
+{%- set YEAR = now() | date(format="%Y") -%}
+<footer class="row">
+    <div class="col-2"></div>
+    <div class="col-8" id="footer-wrapper">
+        <div class="footer-text">{{ config.extra.copyright_string | replace (from="%YEAR%", to=YEAR) | markdown | safe }}</div>
+        {% if config.extra.footer.icons.github %}
+        <div class="footer-icons"><a href="{{config.extra.footer.icons.github}}" class="icon footer icon-gh"></a></div>
+        {% endif %}
+        {% if config.extra.footer.icons.linkedin %}
+        <div class="footer-icons"><a href="{{config.extra.footer.icons.linkedin}}" class="icon footer icon-linkedin"></a></div>
+        {% endif %}
+    </div>
+    <div class="col-2"></div>
+</footer>
+{% endif %}
+{% endblock footer %}

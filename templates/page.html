@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 content">
+      <h1 class="center">
+        {%- if page.title -%}{{ page.title | safe }}
+        {%- elif section.title -%}{{ section.title | safe }}
+        {%- endif -%}
+       </h1>
+      {% if page.extras.show_date %}
+      <h6>{{ page.date | date(format="%e %b %Y") }}</h6>
+      {% endif %}
+      <span class="post-tags">
+        <ul>
+          {% if page.taxonomies.tags %}
+              {% for tag in page.taxonomies.tags %}
+          <li><a href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}" class="singlepost-tags">#{{ tag }}</a>&nbsp;</li>
+              {% endfor %}
+            {% endif %}
+        </ul>
+      </span>
+      {%- if post.description -%}<div class="fullpost-desc">
+        <blockquote>{{ page.description }}</blockquote>
+      </div>{%- endif -%}
+      <div>
+    {% if page.toc and page.extra.show_toc %}
+    <details>
+      <summary><span class="toc-header">Contents</span></summary>
+      <ul class="toc">
+      {% for h1 in page.toc %}
+        <li class="toc"><a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+          {% if h1.children %}
+          <ul class="toc">
+          {% for h2 in h1.children %}
+            <li class="toc"><a href="{{ h2.permalink | safe }}">{{ h2.title }}</a></li>
+              {% if h2.children %}
+            <ul class="toc">
+                {% for h3 in h2.children %}
+              <li class="toc"><a href="{{ h3.permalink | safe }}">{{ h3.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+          {% endfor %}
+      </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+    </details>    
+          {% endif %}
+          {%- if page.content -%}
+          {{ page.content | safe }}
+          {%- elif secion.content -%}
+          {{ section.content | safe }}
+          {%- endif -%}
+      </div>
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <div class="row postnav">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="col-6 left">{% if page.higher %}<a class="postnav" href="{{page.higher.permalink | safe}}">&larr; {{page.higher.title}}</a>{% endif %}</div>
+      <div class="col-6 right">{% if page.lower %}<a class="postnav" href="{{page.lower.permalink | safe}}">{{page.lower.title}} &rarr;</a>{% endif %}</div>
+    </div>
+    <div class="col-2"></div>
+  </div>
+  </div>
+  {% include "shares.html" %}
+  {% include "comments.html" %}
+{% endblock %}

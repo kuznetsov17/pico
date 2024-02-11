@@ -1,0 +1,59 @@
+# The URL the site will be built for
+base_url = "https://kuznetsov17.github.io/minimal-dark/"
+
+
+
+minify_html = true
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+taxonomies = [
+    {name = "tags"},
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "css"
+
+[search]
+index_format = "elasticlunr_json"
+
+[extra]
+index_page="index"
+top_menu = ["index","features","notes"]
+copyright_string = "Сreated by Vitaliy Kuznetsov in 2015 – %YEAR% for fun. Powered by [zola](https://getzola.org/) and [pico](https://github.com/kuznetsov17/pico)."
+author = "John Doe"
+avatar_src = "images/avatar.png"
+logo_src = "images/logo.webp"
+nonce=""
+description = "Some Description"
+
+[extra.giscus]
+data_repo="kuznetsov17/pico"
+data_repo_id="R_kgDOLQ4cpw"
+data_category="General"
+data_category_id="DIC_kwDOLQ4cp84CdIjK"
+data_mapping="url"
+data_strict="0"
+data_reactions_enabled="0"
+data_emit_metadata="0"
+data_input_position="bottom"
+data_lang="en"
+crossorigin="anonymous"
+src="https://giscus.app/client.js"
+
+
+
+[extra.footer.icons]
+github = "#"
+linkedin = "#"
+
+#[extra.stats]
+#script_src = "https://s.viku.me/script.js"
+#site_id = "a5c5797b-2108-4dc8-8ea2-9233dcd733cf"

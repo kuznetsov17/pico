@@ -1,4 +1,22 @@
-# Configuration
++++
+title = "Features"
+date = 2024-01-23
+description = "Some theme features"
+draft = false
+
+[taxonomies]
+
+
+
+[extra]
+show_copyright = true
+show_comments = true
+show_shares = true
+keywords = "zola, theme"
+show_toc = true
+show_date = false
++++
+
 # General
 
 I am not the best webmaster, but should be somewhat responsive.
@@ -10,13 +28,13 @@ Now light mode also supported.
 # Important
 Please make sure to set up your base_url with trailing slash:
 ```toml
-base_url = "https://kuznetsov17.github.io/pico/"
+base_url = "https://kuznetsov17.github.io/minimal-dark/"
 ```
 # Comments
 Theme supports [Giscuss](https://giscuss.app) for comments. The configuration is done via config.toml. Here you can see the example section used for this page deployment:
 ```toml
 [extra.giscus]
-data_repo="kuznetsov17/pico"
+data_repo="kuznetsov17/minimal-dark"
 data_repo_id="R_kgDOLIfXYA"
 data_category="General"
 data_category_id="DIC_kwDOLIfXYM4Ccn56"
@@ -25,7 +43,7 @@ data_strict="0"
 data_reactions_enabled="0"
 data_emit_metadata="0"
 data_input_position="top"
-data_theme="//kuznetsov17.github.io/pico/css/gs_dark.css"
+data_theme="//kuznetsov17.github.io/minimal-dark/css/gs_dark.css"
 data_lang="en"
 crossorigin="anonymous"
 nonce=""
@@ -69,7 +87,7 @@ nonce = "${SOME_HASH_VALUE}" # used for JavaScript src nonce
 ```
 
 # timeline
-```
+
 {% timeline() %}
 [{
     "title":"Lorem Ipsum Event",
@@ -82,10 +100,10 @@ nonce = "${SOME_HASH_VALUE}" # used for JavaScript src nonce
     "date":"Jun-2022"
 }]
 {% end %}
-```
+
 
 # Callouts
-```
+
 {% callout(type = 'warning') %}
 This is an example of **Warning** callout. [Some link](#)
 {% end %}
@@ -95,11 +113,10 @@ This is an example of **Alert** callout. [Some link](#)
 {% callout(type = 'info') %}
 This is an example of **Info** callout. [Some link](#)
 {% end %}
-```
+
 # Mermaid
 
 Read more on how to use mermaid in their [documentation](https://mermaid.js.org/syntax/examples.html)
-```
 {% mermaid() %}
 gitGraph
        commit
@@ -113,8 +130,7 @@ gitGraph
        commit
        commit
 {% end %}
-```
-```
+
 {% mermaid() %}
 graph LR
     A[Square Rect] -- Link text --> B((Circle))
@@ -122,5 +138,3 @@ graph LR
     B --> D{Rhombus}
     C --> D
 {% end %}
-```
-

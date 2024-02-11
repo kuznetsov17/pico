@@ -1,0 +1,12 @@
+
+{% set dt = load_data(literal = body, format="json") %}
+<div id="timeline-content">
+  <ul class="timeline">
+      {% for d in dt %}
+    <li class="event" data-date="{{ d.date |safe }}">
+      <h3>{{ d.title | markdown | safe}}</h3>
+      <p>{{ d.body | safe }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,43 @@
+.content {
+    min-height: 80vh;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.post-tags {
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+    }
+}
+
+main {
+    min-height: 80vh;
+    padding-bottom: 2em;
+}
+
+
+.toc {
+    font-weight: normal;
+    ul {
+        padding-left: .5em;
+        li{
+            display: list-item;
+            padding-left: .5em;
+            font-size: 1em;
+            line-height: 1.2em;
+            list-style: none;  
+        }
+    }   
+}
+
+.badges {
+    padding: 1em;
+    background-color: var(--code-bg-color);
+    img {
+        width: 6em;
+        height: 6em;
+    }
+}

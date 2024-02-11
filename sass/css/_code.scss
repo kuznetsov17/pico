@@ -1,0 +1,50 @@
+pre {
+    background: var(--code-bg-color);
+    padding: 1rem;
+    overflow: auto;
+    code, span {
+      font-family: monospace;
+      font-size: 1rem;
+    }
+    span .z-key span {
+      color: var(--code-kw-color);
+      font-weight: bold;
+    }
+  }
+
+  pre[data-linenos] {
+    padding: 1rem 0;
+  }
+  pre table td {
+    padding: 0;
+  }
+  pre table td:nth-of-type(1) {
+    text-align: center;
+    user-select: none;
+  }
+  pre mark {
+    display: block;
+  }
+  pre table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .z-keyword, .z-entity, .z-function, .z-option {
+    font-weight: bold;
+    color: var(--code-kw-color);
+  }
+  .z-qualified-name .z-storage {
+    color: var(--code-fg-color);
+  }
+  .z-generic-name {
+    color: var(--code-fg-color);  
+  }
+  .z-string {
+    color: var(--code-string-color);  
+  }
+  .z-comment {
+    color: var(--code-comment-color);  
+  }
+  .z-variable.z-readwrite {
+    color: var(--code-string-color);
+  }

@@ -1,0 +1,82 @@
+#header-container {
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-weight: 300;
+    }
+    p {
+        margin:0;
+        padding: 0;
+    }
+}
+
+#cIcon {
+    float: right;
+}
+#searchBox {
+    float: right;
+    vertical-align: bottom;
+    svg {
+        fill: var(--main-color);
+        padding-right: .5em;
+    }
+    input {
+        appearance: none;
+        font-family: var(--font-family);
+        font-size: 1em;
+        color: var(--main-color);
+        background: none;
+        outline: none;
+        border: 1px solid var(--main-color);
+        outline: none;
+        transition: .5s;
+    }
+}
+
+#menu { 
+    float: left;
+}
+#top {
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 1em;
+    a:link, a:visited, a:active {
+        font-size : 1.2em;
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-bottom: .9em;
+        text-decoration: underline;
+        border: 0;
+    }
+    a.active {
+        background-color: var(--main-color);
+        color: var(--bg-color);
+        :hover {
+            color: var(--bg-color);
+        }
+
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    };
+    li {
+        display: inline-block;
+    }
+}
+
+#themeIcon {
+    float: right;
+    svg {
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: middle;
+        display: inline-block;
+        fill: var(--main-color);
+        padding-left: .5em;    
+        cursor: pointer;
+        :hover {
+            fill: var(--hover-color)
+        }
+    }
+}

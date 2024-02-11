@@ -1,0 +1,33 @@
+.reading-time {
+    padding-left: .5em;
+    line-height: 1em;
+    font-size: .9em;
+}
+#catlist, #taglist {
+    ul {
+        list-style: none;
+        li {
+            list-style: none;
+        }
+    }
+}
+#taglist {
+    font-weight: normal;
+    a:link, a:visited, a:active {
+        text-decoration: none;
+    }
+}
+#catlist {
+    b {
+        font-weight: 500;
+    }
+    a:link, a:visited, a:active {
+        text-decoration: none;
+    }
+}
+.post-desc {
+    font-weight: 100;
+    font-size: .9em;
+    line-height: 1em;
+    padding-bottom: 1em;
+}

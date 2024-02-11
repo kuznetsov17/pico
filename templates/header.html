@@ -1,0 +1,36 @@
+{% block header %}
+<header>
+  <div class="container" id="header-container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8" id="top">
+        <div id="menu">
+          <ul>
+          {% for menuitem in config.extra.top_menu %}
+            <li><a href="{% if menuitem == config.extra.index_page %}{{config.base_url | safe }}{% else %}{{config.base_url | safe }}{{ menuitem }}{% endif %}" class="{% if menuitem in current_url and menuitem != '/' %} active{% elif menuitem == config.extra.index_page and current_url == config.base_url %} active{% endif %}">{{ menuitem }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+        {%- if config.build_search_index -%}
+        <div id="searchBox">  
+          <span class="icon icon-search head"></span>
+          <input id="searchInput" name="search">
+        </div>
+        {%- endif -%}
+        <span id="cIcon" class="icon head"></span>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+</header>
+{%- if config.build_search_index -%}
+    <div class="row">
+      <div class="col-12">
+          <div id="sResults">
+            <ul id="sResultsUL" class="search-results">
+            </ul>
+          </div>
+      </div>
+    </div>
+  {%- endif -%}
+{% endblock header %}

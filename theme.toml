@@ -1,0 +1,14 @@
+name = "pico"
+description = "One more minimalistic theme for Zola"
+license = "MIT"
+homepage = "https://github.com/kuznetsov17/pico"
+# The minimum version of Zola required
+min_version = "0.18.0"
+# An optional live demo URL
+demo = "https://kuznetsov17.github.io/pico/"
+
+[author]
+name = "Vitaliy Kuznetsov"
+homepage = "https://viku.me"
+
+

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row content">
+  <div class="col-2"></div>
+  <div class="col-6 content" id="catlist">
+    <h1 class="center">Tag: {{ term.name }}</h1>
+    <ul>
+      {% for post in term.pages %}
+      <li><b><a href="{{ post.permalink | safe }}">
+      {{ post.date | date(format="%e %b %Y") }} <span class="invis">&raquo;</span>
+      {{ post.title }}</a></b><span class="icon icon-time post-list"></span><span class="invis reading-time">{{ post.reading_time }} min read</span>
+      {%- if post.description -%}<div class="invis post-desc">{{ post.description }}</div>{%- endif -%}
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="pagination">
+      {%- if paginator.previous  or paginator.next -%}    
+      {%- set pag_start = 1 -%}
+      {%- set pag_end = paginator.number_pagers -%}
+      {%- if paginator.previous -%}<a href = "{{ paginator.previous }}">&larr;</a>{%- endif -%}
+      {%- for i in range(start=pag_start, end=pag_end+1) -%}
+        <a class="{% if paginator.current_index == i %} current {% endif %}" href="{{ paginator.base_url | safe }}{{ i ~ '/' }}">{{i}}</a>
+      {%- endfor -%}
+      {%- if paginator.next -%}<a href = {{paginator.next}}>&rarr;</a>{%- endif -%}
+      {%- endif -%}
+      </div>
+  </div>
+  </div>
+  <div class="col-2"></div>
+</div>
+{% endblock %} 

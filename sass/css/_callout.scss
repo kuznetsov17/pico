@@ -1,0 +1,61 @@
+.co-container {
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    .callout {
+        a:hover {
+            color: var(--hover-color);
+        }
+        background-color: var(--code-bg-color);
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        padding: .6em;
+        * {
+            padding: 0;
+            margin: 0;
+            color: var(--co-icon)
+        }
+        .co-body {
+            line-height: 1.5em;
+            font-size: 1em;
+        }
+        .co-img {
+            float: left;
+            text-align: right;
+            padding-right: 1em;
+            height: 1em;
+            vertical-align: middle;
+            display: inline-block;
+            svg {
+                height: 1.3em;
+                width: 1.3em;
+                fill: var(--font-color);
+                vertical-align: middle;
+                display: inline-block;
+            }
+        }
+        &.warning {
+            border: 1px solid var(--co-warning);
+            border-left: 8px solid var(--co-warning);
+            svg {
+                fill: var(--co-warning)
+            }
+        }
+        &.alert {
+            border: 1px solid var(--co-alert);
+            border-left: 8px solid var(--co-alert);
+            svg {
+                fill: var(--co-alert)
+            }
+        }
+        &.info {
+            border: 1px solid var(--co-info);
+            border-left: 8px solid var(--co-info);
+            svg {
+                fill: var(--co-info)
+            }
+        }
+    }
+}

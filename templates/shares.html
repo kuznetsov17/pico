@@ -1,0 +1,16 @@
+{% if page.extra.show_shares %}
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 center shares">
+        <ul>
+            <li><a href = "https://www.linkedin.com/sharing/share-offsite/?url={{ current_url | safe }}" class="icon icon-linkedin shares"></a></li>
+            <li><a href="http://www.facebook.com/sharer.php?u={{ current_url | safe }}" class="icon icon-fb shares"></a></li>
+            <li><a href = "https://t.me/share/url?url={{ current_url | safe }}" class="icon icon-tg shares"></a></li>
+            <li><a href= "https://api.whatsapp.com/send?text={{ current_url | safe }}" class="icon icon-wa shares"></a></li>
+        </ul>
+    </div>
+    <div class="col-2"></div>
+</div>
+{% endif %}
+
+

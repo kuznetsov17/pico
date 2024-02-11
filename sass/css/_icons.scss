@@ -1,0 +1,98 @@
+.icon-search {
+    mask: url('/icons/search.svg');
+  }
+  .icon-github {
+    mask: url('/icons/github.svg');
+  }
+  .footer {
+    &.icon {
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: middle;
+        margin-left: .2em;
+    }
+  }
+  .post-list {
+    &.icon {
+      display: inline-block;
+      width: .8em;
+      height: .8em;
+      vertical-align: middle;
+      margin-left: .25em;
+      color: var(--main-color);
+      filter: opacity(0.6);
+    }
+  }
+  .head {
+    &.icon {
+        width: 1.4em;
+        height: 1.4em;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: .2em;
+        margin-right: .2em;
+    }
+  }
+  .shares {
+    &.icon {
+        width: 2em;
+        height: 2em;
+    }
+  }
+  .icon-gh {
+    mask: url('/icons/gh.svg');
+  }
+  .icon-linkedin {
+    mask: url('/icons/linkedin.svg');
+  }
+  .icon-fb {
+    mask: url('/icons/fb.svg');
+  }
+  .icon-wa {
+    mask: url('/icons/wa.svg');
+  }
+  .icon-tg {
+    mask: url('/icons/tg.svg');
+  }
+  .icon-dark {
+    mask: url('/icons/dark.svg');
+    cursor: pointer;
+  }
+  .icon-light {
+    mask: url('/icons/light.svg');
+    cursor: pointer;
+  }
+  .closeBtn {
+    margin: .5em;
+    mask: url('/icons/close.svg');
+    cursor: pointer;
+    &.icon {
+      height: 1.5em;
+      width: 1.5em;
+      // padding: 1em;
+      :hover {
+        fill: var(--hover-color);
+      } 
+    }
+}
+  .icon-time {
+    mask: url('/icons/time.svg');
+  }
+  .icon {
+    display: inline-block;
+    background: var(--main-color);
+    mask-size: cover;
+  }
+  .icon:hover,
+  .icon:focus {
+    background: var(--hover-color);
+  }
+  .icon-time:hover, 
+  .icon-search:hover,
+  .icon-search:focus {
+    background: var(--main-color);
+  }
+  
+  
+  

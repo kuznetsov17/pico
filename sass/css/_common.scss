@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Urbanist";
+    src: url('/fonts/urbanist.ttf') format("truetype");
+}
+
+html,body {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+p {
+    line-height: 1.2em;
+    font-size: 1em;
+    font-weight: normal;
+}
+a:link, a:visited, a:active {
+    color: var(--main-color); 
+}
+a:hover {
+    color: var(--hover-color);
+}
+svg {
+    pointer-events: all;
+}
+h1,h2,h3,h4,h5,h6,b, strong {
+    font-weight: 600;
+}
+.invis {
+    color: var(--main-color);
+    filter: opacity(0.6);
+}
+.pagination {
+    text-align: center;
+    font-size: .8em;
+    a:link, a:visited, a:active {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: .8em;
+        padding-right: .8em;
+        border-bottom: .2em solid var(--main-color);
+        margin: .5em;
+    }
+    a:hover {
+        color: var(--main-color);
+        background-color: var(--hover-bg);
+        svg:hover {
+            fill: var(--hover-color);
+        }
+    }
+    a.current {
+        background-color: var(--hover-bg);
+    }
+}
+.shares {
+    ul {
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: .5em;
+        }
+    }
+}
