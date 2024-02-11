@@ -63,10 +63,7 @@ show_shares = false
 index = true
 
 +++
-This is the index page of **minimal-dark** (not only dark nowadays) zola theme.
-It was designed to serve small v-card site with [blogging](notes) section.
-
-The theme was created keeping in mind the [KISS](https://en.wikipedia.org/wiki/KISS_principle) approach. Feel free to fork, modify or completely deface :)
-
+This is the index page of **pico** zola theme.
+Lightweight and clean. Built on top of [simple grid](https://simplegrid.io)
 See some useful info in [features](@/features.md) page
 
