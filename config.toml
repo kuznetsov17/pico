@@ -53,7 +53,3 @@ src="https://giscus.app/client.js"
 [extra.footer.icons]
 github = "#"
 linkedin = "#"
-
-#[extra.stats]
-#script_src = "https://s.viku.me/script.js"
-#site_id = "a5c5797b-2108-4dc8-8ea2-9233dcd733cf"

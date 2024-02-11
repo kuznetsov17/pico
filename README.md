@@ -123,4 +123,11 @@ graph LR
     C --> D
 {% end %}
 ```
+# Thanks to
+ - [Giscuss](https://giscuss.app) for excellent comments system
+ - [bootstrap icons](https://icons.getbootstrap.com) for great social icons
+ - [Google Fonts](https://fonts.google.com/specimen/Urbanist) for Urbanist font
+
+# Screenshot
+![Screenshot](https://github.com/kuznetsov17/pico/blob/main/screenshot.png?raw=true)
 
