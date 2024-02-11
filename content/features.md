@@ -1,6 +1,6 @@
 +++
 title = "Features"
-date = 2024-01-23
+date = 2024-02-11
 description = "Some theme features"
 draft = false
 
@@ -28,13 +28,13 @@ Now light mode also supported.
 # Important
 Please make sure to set up your base_url with trailing slash:
 ```toml
-base_url = "https://kuznetsov17.github.io/minimal-dark/"
+base_url = "https://kuznetsov17.github.io/pico/"
 ```
 # Comments
 Theme supports [Giscuss](https://giscuss.app) for comments. The configuration is done via config.toml. Here you can see the example section used for this page deployment:
 ```toml
 [extra.giscus]
-data_repo="kuznetsov17/minimal-dark"
+data_repo="kuznetsov17/pico"
 data_repo_id="R_kgDOLIfXYA"
 data_category="General"
 data_category_id="DIC_kwDOLIfXYM4Ccn56"
@@ -43,7 +43,7 @@ data_strict="0"
 data_reactions_enabled="0"
 data_emit_metadata="0"
 data_input_position="top"
-data_theme="//kuznetsov17.github.io/minimal-dark/css/gs_dark.css"
+data_theme="//kuznetsov17.github.io/pico/css/gs_dark.css"
 data_lang="en"
 crossorigin="anonymous"
 nonce=""
