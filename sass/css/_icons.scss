@@ -1,8 +1,8 @@
 .icon-search {
-    mask: url('/icons/search.svg');
+    mask: url('../icons/search.svg');
   }
   .icon-github {
-    mask: url('/icons/github.svg');
+    mask: url('../icons/github.svg');
   }
   .footer {
     &.icon {
@@ -41,31 +41,31 @@
     }
   }
   .icon-gh {
-    mask: url('/icons/gh.svg');
+    mask: url('../icons/gh.svg');
   }
   .icon-linkedin {
-    mask: url('/icons/linkedin.svg');
+    mask: url('../icons/linkedin.svg');
   }
   .icon-fb {
-    mask: url('/icons/fb.svg');
+    mask: url('../icons/fb.svg');
   }
   .icon-wa {
-    mask: url('/icons/wa.svg');
+    mask: url('../icons/wa.svg');
   }
   .icon-tg {
-    mask: url('/icons/tg.svg');
+    mask: url('../icons/tg.svg');
   }
   .icon-dark {
-    mask: url('/icons/dark.svg');
+    mask: url('../icons/dark.svg');
     cursor: pointer;
   }
   .icon-light {
-    mask: url('/icons/light.svg');
+    mask: url('../icons/light.svg');
     cursor: pointer;
   }
   .closeBtn {
     margin: .5em;
-    mask: url('/icons/close.svg');
+    mask: url('../icons/close.svg');
     cursor: pointer;
     &.icon {
       height: 1.5em;
@@ -77,7 +77,7 @@
     }
 }
   .icon-time {
-    mask: url('/icons/time.svg');
+    mask: url('../icons/time.svg');
   }
   .icon {
     display: inline-block;
