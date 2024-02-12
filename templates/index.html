@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="row content">
+<div class="row content" id="flexbox">
   <div class="col-2"></div>
   <div class="col-5 content" id="index-text">
     <h1 class="center">
@@ -13,7 +13,7 @@
   </div>
   <div class="col-3">
     <div id = "index-image">
-      <img src="{{config.base_url}}{{ config.extra.avatar_src }}" alt="avatar" class="avatar" width="300" height="300">
+      <img src="{{config.base_url}}{{ config.extra.avatar_src }}" alt="avatar" class="avatar">
     </div>
   </div>
 </div> 

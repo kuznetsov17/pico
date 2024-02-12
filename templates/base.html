@@ -35,6 +35,7 @@
   <link type="text/css" rel="stylesheet" href="{{config.base_url | safe }}css/grid.css?v={{ cdn_version }}">
   <link type="text/css" rel="stylesheet" href="{{config.base_url | safe }}css/style.css?v={{ cdn_version }}">
   <link rel="icon" type="image/png" href="{{config.base_url | safe }}images/favicon.webp">
+  <link rel="mask-icon" type="image/png" href="{{config.base_url | safe }}images/favicon.webp">
   {% if config.extra.stats and config.mode != 'serve' %}
   <script async src="{{config.extra.stats.script_src}}" data-website-id="{{config.extra.stats.site_id}}" nonce="{{config.extra.nonce}}"></script>
   {% endif %}
