@@ -1,7 +1,3 @@
-// :root {
-//     $border-color: #f6f8fa; 
-//     $bg-color: #d6d7d9;
-// }
 * {
     --font-family: 'Urbanist', Halvetica, Arial;
 }
@@ -9,29 +5,49 @@
     --co-warning: rgba(255, 145, 0, 0.8);
     --co-alert: rgb(255, 0, 21);
     --co-info: rgb(0, 123, 255);
+    
+    --main-color-light: #011627;
+    --bg-color-light: #F4F9E9;
+    --hover-color-light: #FF3366;
+    --hover-bg-light: #e7ebde;
+    --code-bg-color-light: #e2e6d9;
+    --code-fg-color-light: #383a42;
+    --code-kw-color-light: #054865;
+    --code-string-color-light:#448743;
+    --code-comment-color-light:#a9a9a9; 
+
+    --main-color-dark: #EEEEEE; 
+    --bg-color-dark: #222831;
+    --hover-color-dark: #369ce4;
+    --hover-bg-dark: #393E46;
+    
+    --code-bg-color-dark: #303947;
+    --code-fg-color-dark: #dcdfe4;
+    --code-kw-color-dark: #9a8240;
+    --code-string-color-dark:#6e8e57;
+    --code-comment-color-dark:#686767;
 }
 [color-theme="light"] {
-    --main-color: #576F72;
-    --bg-color: #F0EBE3;
-    --hover-color: #ff6f00;
-    --hover-bg: #E4DCCF;
+    --main-color: var(--main-color-light);
+    --bg-color: var(--bg-color-light);
+    --hover-color: var(--hover-color-light);
+    --hover-bg: var(--hover-bg-light);
 
-    --code-bg-color: #e1dcd3;
-    --code-fg-color: #383a42;
-    --code-kw-color: #054865;
-    --code-string-color:#448743;
-    --code-comment-color:#a9a9a9; 
+    --code-bg-color: var(--code-bg-color-light);
+    --code-fg-color: var(--code-fg-color-light);
+    --code-kw-color: var(--code-kw-color-light);
+    --code-string-color: var(--code-string-color-light);
+    --code-comment-color: var(--code-comment-color-light);
 }
 
 [color-theme="dark"] {   
-    --main-color: #EEEEEE; 
-    --bg-color: #222831;
-    --hover-color: #FFD369;
-    --hover-bg: #393E46;
-    
-    --code-bg-color: #303947;
-    --code-fg-color: #dcdfe4;
-    --code-kw-color: #9a8240;
-    --code-string-color:#6e8e57;
-    --code-comment-color:#686767;
+    --main-color: var(--main-color-dark);
+    --bg-color: var(--bg-color-dark);
+    --hover-color: var(--hover-color-dark);
+    --hover-bg: var(--hover-bg-dark);
+    --code-bg-color: var(--code-bg-color-dark);
+    --code-fg-color: var(--code-fg-color-dark);
+    --code-kw-color: var(--code-kw-color-dark);
+    --code-string-color: var(--code-string-color-dark);
+    --code-comment-color: var(--code-comment-color-dark);
 }

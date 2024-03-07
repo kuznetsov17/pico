@@ -22,21 +22,20 @@
   padding: 50px;
   list-style: none;
   text-align: left;
-  font-weight: 100;
+  // font-weight: 400;
   max-width: 60%;
 }
 
 .timeline .event {
-  border-bottom: 1px dashed var(--invis-color);
-  padding-bottom: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 4em;
   position: relative;
   list-style: none;
   line-height: 1.5em;
   font-size: 1.2em;
-  font-weight: 100;
+  font-weight: 400;
   width: 100%;
   h3 p {
+    line-height: .5em;
     font-weight:700;
   }
 }
@@ -53,21 +52,19 @@
 }
 .timeline .event:before {
   left: -8em;
+  line-height: .5em;
   color: var(--invis-color);
-  // max-width: 10%;
   content: attr(data-date);
-  text-align: right;
   ul, li {
     list-style: none;
   }
 }
 .timeline .event:after {
   box-shadow: 0 0 0 4px var(--hover-color);
-  left: -57.85px;
+  left: -2.5em;
   background: var(--code-bg-color);
   border-radius: 50%;
-  height: 11px;
-  width: 11px;
+  height: .5em;
+  width: .5em;
   content: "";
-  top: 5px;
 }

@@ -39,6 +39,7 @@
   {% if config.extra.stats and config.mode != 'serve' %}
   <script async src="{{config.extra.stats.script_src}}" data-website-id="{{config.extra.stats.site_id}}" nonce="{{config.extra.nonce}}"></script>
   {% endif %}
+  <script src = "{{config.base_url | safe }}js/codecopy.js?v={{ cdn_version }}" nonce="{{config.extra.nonce}}"></script>
   <script src="{{config.base_url | safe }}js/mermaid.min.js?v={{ cdn_version }}" nonce="{{config.extra.nonce}}"></script>
   {%- if config.build_search_index -%}
   <script src="{{config.base_url | safe }}elasticlunr.min.js?v={{ cdn_version }}" nonce="{{config.extra.nonce}}"></script>

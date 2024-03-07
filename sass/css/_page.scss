@@ -2,6 +2,19 @@
     min-height: 80vh;
     font-size: 1.2em;
     font-weight: lighter;
+    table {
+        border-spacing: 0;
+        border-right: 1px solid var(--main-color);
+        border-bottom: 1px solid var(--main-color);
+        th, td {
+            padding: .5em;
+            border-top: 1px solid var(--main-color);
+            border-left: 1px solid var(--main-color);
+        }
+        th {
+            background-color: var(--hover-bg);
+        }
+    }
 }
 .post-tags {
     ul {

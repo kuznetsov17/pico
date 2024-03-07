@@ -1,5 +1,30 @@
 const cIcon = document.getElementById('cIcon');
+mmdElements = document.getElementsByClassName('mermaid');
+const mmdHTML = [];
+for (let i = 0; i < mmdElements.length; i++) {
+    mmdHTML[i] = mmdElements[i].innerHTML;
+}
 
+function mermaidRender(theme) {
+    if ( theme == 'dark' ) {
+        initOptions = {  
+            startOnLoad: false, 
+            theme: 'dark'
+        } 
+    } 
+    else {
+        initOptions = {  
+            startOnLoad: false,
+            theme: 'neutral' 
+            }   
+    }
+    for (let i = 0; i < mmdElements.length; i++) {
+        delete mmdElements[i].dataset.processed;
+        mmdElements[i].innerHTML = mmdHTML[i];
+    }
+    mermaid.initialize(initOptions);
+    mermaid.run();
+}
 function giscusRender(theme) {
     if (document.head.dataset['commentsEnabled'] == 'true'){  
         baseUrl = document.head.dataset['baseUrl'];
@@ -50,9 +75,11 @@ function setStartTheme(){
     }
     cIcon.classList.remove('icon-'+currentTheme);
     cIcon.classList.add('icon-'+targetColorTheme);
+    document.head.dataset.colorTheme = targetColorTheme;
     document.documentElement.setAttribute('color-theme', targetColorTheme);
     localStorage.setItem('color-theme',targetColorTheme);
-    giscusRender(targetColorTheme)
+    giscusRender(targetColorTheme);
+    mermaidRender(targetColorTheme);
 }
 
 
@@ -68,8 +95,10 @@ function switchTheme() {
     cIcon.classList.remove('icon-'+currentTheme);
     cIcon.classList.add('icon-'+targetColorTheme);
     document.documentElement.setAttribute('color-theme', targetColorTheme);
+    document.head.dataset.colorTheme = targetColorTheme;
     localStorage.setItem('color-theme',targetColorTheme);
     giscusRender(targetColorTheme)
+    mermaidRender(targetColorTheme)
 }
 
 

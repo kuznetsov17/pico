@@ -1,7 +1,9 @@
 .mermaid {
     text-align: center;
-    width: 60%;
-    margin: 0 auto;
+    // margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 1em;
+    strong {
+        font-weight: bold;
+    }
 }
