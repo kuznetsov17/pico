@@ -1,0 +1,11 @@
+{% set raw = load_data(literal = body, format='toml') %}
+{% set cards = raw.cards %}
+<div class="cards-wrapper center">
+    {% for card in cards %}
+    <div class="panel">
+        <div class="skillcard-icon skillcard-icon-{{card.icon}}"></div>
+        <div class="skillcard-title"><strong>{{ card.title | safe }}</strong></div>
+        <div class="skillcard-details">{{ card.details | markdown | safe }}</div>
+    </div>
+    {% endfor %}
+</div>

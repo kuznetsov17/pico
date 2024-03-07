@@ -1,0 +1,50 @@
+@mixin setSVGIcon($svgs) {
+    @each $svg in $svgs {
+      .skillcard-icon-#{$svg} {
+        mask-image: url('/icons/#{$svg}.svg');
+      }
+    } 
+  }
+@include setSVGIcon(('aws', 'gcp', 'gh', 'git','rack', 'code'));
+
+.cards-wrapper {
+    display: grid;
+    // margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    text-align: center;
+    padding: 0 auto;
+    width: 85%;
+    margin-bottom: 2em;
+}
+.panel {
+    border-top: .2em solid var(--hover-color);
+    margin: .2em;
+    transition: all .5s;
+    display: inline;
+    overflow-y: scroll;
+    max-height: 14em;
+    
+    .skillcard-details {
+        text-align: left;
+        font-size: .9em;
+        ul {
+            // padding: 0;
+            li {
+                // list-style: outside;
+            }
+        }
+    }
+    .skillcard-icon {
+        text-align: center;
+        width: 100%;
+        height: 2em;
+        background: var(--main-color);
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: 75% 75%;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        transition: all .5s;
+    }
+}
