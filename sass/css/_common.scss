@@ -2,7 +2,10 @@
     font-family: "Urbanist";
     src: url('../fonts/urbanist.ttf') format("truetype");
 }
-
+@font-face {
+    font-family: "Mulish";
+    src: url('../fonts/mulish.ttf') format("truetype");
+}
 html,body {
     height: 100%;
     min-height: 100%;

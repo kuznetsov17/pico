@@ -126,7 +126,8 @@ graph LR
 # Thanks to
  - [Giscuss](https://giscuss.app) for excellent comments system
  - [bootstrap icons](https://icons.getbootstrap.com) for great social icons
- - [Google Fonts](https://fonts.google.com/specimen/Urbanist) for Urbanist font
+ - [Urbanist Font](https://fonts.google.com/specimen/Urbanist)
+ - [Mulush Font](https://fonts.google.com/specimen/Mulish)
 
 # Screenshot
 ![Screenshot](https://github.com/kuznetsov17/pico/blob/main/screenshot.png?raw=true)

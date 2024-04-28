@@ -2,6 +2,11 @@
     min-height: 80vh;
     font-size: 1.2em;
     font-weight: lighter;
+    ul {
+        li {
+            font-weight: 300;
+        }
+    }
     table {
         border-spacing: 0;
         border-right: 1px solid var(--main-color);
