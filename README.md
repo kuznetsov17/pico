@@ -43,7 +43,7 @@ show_date = true / false # displays publication date in page
 
 # Blog
 I am using this theme for my [notes](https://viku.me/notes/), or probably blog. 
-The section template supports pagination, tags, sorts the pages by publication date. You may see the working example [here](@/notes/_index.md)
+The section template supports pagination, tags, sorts the pages by publication date. You may see the working example [here](@/content/notes/_index.md)
 
 
 # Search
